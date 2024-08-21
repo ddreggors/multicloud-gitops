@@ -75,7 +75,7 @@ clusterGroup:
       namespace: hello-david
       project: hello-david
       path: charts/all/hello-david
-      helmOverrides:
+      overrides:
         - name: config.user
           value: David
   imperative:
