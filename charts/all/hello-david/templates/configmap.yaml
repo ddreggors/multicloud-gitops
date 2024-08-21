@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  user: {{ .Values.config.user }}
+kind: ConfigMap
+metadata:
+  name: hello-david-config
+  namespace: hello-david
