@@ -68,6 +68,14 @@ clusterGroup:
       namespace: hello-world
       project: hello-world
       path: charts/all/hello-world
+    hello-david:
+      name: hello-david
+      namespace: hello-david
+      project: hello-david
+      path: charts/all/hello-david
+      helmOverrides:
+        - name: config.user
+          value: David
   imperative:
     # NOTE: We *must* use lists and not hashes. As hashes lose ordering once parsed by helm
     # The default schedule is every 10 minutes: imperative.schedule
